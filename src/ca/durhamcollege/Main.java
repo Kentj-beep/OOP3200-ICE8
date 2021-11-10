@@ -71,9 +71,11 @@ public class Main
         System.out.println("Get 10 Random Values:");
         for (int i = 0; i < 10; i++)
         {
-            var randRows = (int)(Math.random() * rows);
-            var randColumns = (int)(Math.random() * columns);
-            System.out.print("For row: " + randRows + " col: " + randColumns + " ");
+            int randRows = (int)(Math.random() * rows);
+            int randColumns = (int)(Math.random() * columns);
+            int printRow = randRows + 1;
+            int printColumn = randColumns + 1;
+            System.out.print("For row: " + printRow + " col: " + printColumn + " ");
             System.out.printf("The Random number is: %.2f \n", board[randRows][randColumns]);
 
         }
